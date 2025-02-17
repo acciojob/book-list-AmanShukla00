@@ -32,5 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("book-list").addEventListener("click", function (e) {
         if (e.target.classList.contains("delete")) {
             e.target.closest("tr").remove();
+        }
     });
-}
+});
