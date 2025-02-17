@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>MyBookList</h1>
+    <h1>MyBookList</h1>
     <div class="form-group">
-		<th>Title</th>
-        <input type="text" id="title" >
-	
-		<th>Author</th>
-        <input type="text" id="author">
-		 <th>ISBN#</th>
-        <input type="text" id="isbn">
-        <button id="submit">Add Book</button>
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <input type="text" id="isbn" placeholder="ISBN#">
+        <button id="submit">Submit</button>
     </div>
     <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN#</th>
+                <th>Action</th>
+            </tr>
+        </thead>
         <tbody id="book-list">
         </tbody>
     </table>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
